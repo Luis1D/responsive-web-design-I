@@ -81,7 +81,7 @@ header {
 .logo {
 	width: 10rem;
 	height: 2rem;
-	margin: 1.5rem 5rem 0 0;
+	margin: 1.5rem 0 0 0;
 }
 nav {
 	padding: 2rem 2rem 2rem 0;
@@ -306,15 +306,17 @@ hr {
 /** Media Queries **/
 
 @media (max-width: 800px) {
-
+	body {
+		padding: 0;
+	}
 	/* Index.html */
 	.sec-one-img {
 		display: none;
 	}
 	header {
-		flex-flow: column wrap;
+		flex-flow: column-reverse wrap;
 		align-items: center;
-		margin-top: 2rem;
+		margin: 2rem 0 2rem 0;
 	}
 	nav {
 		padding: 0;
@@ -328,6 +330,7 @@ hr {
 	.logo {
 		margin: 0;
 		padding: 0;
+		float: right;
 	}
 	#section-one {
 		align-items: center;
@@ -336,6 +339,9 @@ hr {
 	}
 	.title-container {
 		margin: 0 auto;
+	}
+	.some-facts {
+		align-items: center;
 	}
 
 	/* Footer */
@@ -356,14 +362,16 @@ hr {
     }
 	
 }
-
-@media (max-width: 500px) {
-	body {
-		padding: 0;
+@media (max-width: 660px) {
+	nav a{
+		margin-right: .5rem;
 	}
+}
+@media (max-width: 500px) {
 	header {
 		height: 25rem;
 		width: 100%;
+		margin: 2rem 0 0 0;
 	}
 	nav {
 		width: 100%;
